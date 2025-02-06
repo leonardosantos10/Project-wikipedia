@@ -1,0 +1,117 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul { list-style: none; padding-left: 5px; }
+a { color:blue; text-decoration: none;}
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+
+header .logo img {
+    height: 60px;
+    width: 60px;
+    margin: 10px; 
+}
+
+
+
+figure {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap; 
+   gap: 20px; 
+}
+
+figcaption {
+    text-align: center;
+    width: 150px; 
+    margin-top: 5px; 
+}
+
+figure div .img {
+   width: 180px;
+    height: 180px;
+}
+
+
+/* estilização imagem valorização do café  */
+
+.fig2 .logo2 {
+    height: 180px;
+     width: 280px;
+     margin: 0;
+ }
+ 
+.fig2 {
+    display: flex;
+    flex-direction: column;  /* Organiza a imagem e a legenda em coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente (caso haja mais espaço disponível) */
+    align-items: center;     /* Centraliza o conteúdo horizontalmente */
+    text-align: center;      /* Centraliza o texto */
+    margin: 0 auto;          /* Centraliza o figure na página */
+    gap: 5px;
+}
+
+.fig2 figcaption {
+    white-space: nowrap;
+   text-align: center;
+   margin-top: 0;
+   display: block;          /* Garante que o figcaption seja tratado como bloco */
+   width: 100%;  
+}
+
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.content-video {
+    text-align: center;
+}
+
+iframe {
+    margin: 0 auto; /* Centraliza o iframe */
+    display: block; /* Garante que o iframe seja tratado como um bloco */
+}
